@@ -1,0 +1,44 @@
+import math
+print("1) Addition 2) Subtraction 3) Multiplication 4) Sin 5) Cos 6) Tan 7)Exp (input1^input2)")
+a=int(input("Enter the option you want"))
+if a==1:
+    ia=int(input("Enter the number of inputs you want"))
+    addition=[]
+    for i in range(0,ia):
+        ele=int(input())
+        addition.append(ele)
+        total=sum(addition)
+    print("The addition of the elements are:",total)
+elif a==2:
+    res=0
+    iss=int(input("Enter the number of inputs you want"))
+    subtraction=[]
+    for j in range (0,iss):
+     eles=int(input())
+     subtraction.append(eles)
+    for j in range (len(subtraction)):
+        res=subtraction[j]-res
+    print(res)
+elif a==3:
+    mul=1
+    imul=int(input("Enter the number of inputs you want"))
+    multiplication=[]
+    for i in range(0,imul):
+        elem=int(input())
+        multiplication.append(elem)
+    for i in range(len(multiplication)):
+        mull=mul*multiplication[i]
+    print(mull)
+elif a==4:
+    angle=int(input("Enter the angle in radians"))
+    print(math.sin(angle))
+elif a==5:
+    angle1=int(input("Enter the angle in radians"))
+    print(math.cos(angle1))
+elif a==6:
+    angle2=int(input("Enter the angle in radians"))
+    print(math.tan(angle2))
+else:
+    k=int(input("Enter input1"))
+    m=int(input("Enter input2"))
+    print(math.exp(k,m))
