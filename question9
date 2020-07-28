@@ -1,0 +1,36 @@
+import time
+a=int(input("ENTER 1 TO START ACCELERATION TEST"))
+if(a==1):
+    start_time=time.time()
+    print(input("press 1 again to stop "))
+    a=int(input())
+    if(a==1):
+        stop_time=time.time()
+        elapsed_time=stop_time-start_time
+print(elapsed_time)
+a=int(input("ENTER 2 TO START ENDURANCE TEST"))
+if(a==2):
+    print("You have entered endurance mode")
+a=int(input("Enter 1 to start"))
+if(a==1):
+    start_time=time.time()
+    print("Enter 1 again to stop")
+    a=int(input())
+    if(a==1):
+        stop_time=time.time()
+    elapsed_time=stop_time-start_time
+print(elapsed_time)
+print("Enter 2 to start acceleration test")
+a=int(input(""))
+if(a==2):
+    start_time=time.time()
+    print("Enter 2 again to stop")
+    a=int(input())
+    if(a==2):
+        stop_time=time.time()
+    elapsed_time=stop_time-start_time
+print(elapsed_time)
+print("enter 0 to exit")
+a=int(input())
+if(a==0):
+    exit()
