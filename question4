@@ -1,0 +1,10 @@
+sen=str(input("Enter the string"))
+count=0
+
+print(sen)
+for i in sen:
+    if(i=='a'or i=='e'or i=='i' or i=='o' or i=='u'):
+     count=count+1
+    else :
+        count=count
+print(count)
