@@ -1,0 +1,10 @@
+arr = []
+n=int(input("Enter the number of element you want in a array"))
+for i in range (0,n):
+    ele=int(input())
+    arr.append(ele)
+for i in range (0,n):
+    for j in range (i,n):
+        if arr[j-1] > arr[j] :
+            arr[j-1], arr[j] = arr[j], arr[j-1]
+print(arr)
