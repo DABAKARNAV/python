@@ -1,0 +1,8 @@
+string1=input("Enter String 1")
+string2=input("Enter String 2")
+print("Without case insesnitivity")
+if string1==string2:
+    print("The strings are equal")
+print("With case sensitivity")
+if string1.__eq__(string2):
+    print("Strings are equal")
